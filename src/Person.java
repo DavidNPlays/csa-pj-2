@@ -6,7 +6,7 @@ public class Person {
     protected String studyStyle;
     public Person(String name, int wakeUpTime, String snack, String studyStyle) {
         this.name = name;
-        this.wakeUpTime = wakeUpTime;
+        this.wakeUpTime = wakeUpTime; // overriding
         this.snack = snack;
         this.studyStyle = studyStyle;
     }
