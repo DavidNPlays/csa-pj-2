@@ -5,7 +5,7 @@ public class Roommate extends Person {
         super(name, wakeUpTime, snack, studyStyle);
         this.roomNum = roomNum;
     }
-// TODO: Override getInfo to include room number
+// TODO: Override getInfo to include room number // **Zaid did this part**
 
     //@Override
     public String getInfo()

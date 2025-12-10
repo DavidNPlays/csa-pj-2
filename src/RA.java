@@ -7,7 +7,7 @@ public class RA extends Person {
     }
     // TODO: Override getInfo to include [RA] and floor number
     @Override
-    public String getInfo() {
+    public String getInfo() { // **Albert did this part**
         return "[RA]" + super.getInfo() + " | Floor: " + floor; // correct format for returning
     }
 }

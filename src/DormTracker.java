@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class DormTracker {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // TODO: Create ArrayList to store Person objects
+        // TODO: Create ArrayList to store Person objects **David did this part**
         ArrayList<Person> people = new ArrayList<>();
         people.add(new Roommate("Jenny", 7, "Chips", "Quiet solo", 204)); // adding roommates to array list called people
         people.add(new Roommate("Rohan", 11, "Ramen", "Loud music", 206));
         people.add(new Roommate("Bibi", 11, "Ramen", "Loud music", 206));
         people.add(new RA("Samantha", 9, "Protein Bar", "Organized groups", 2)); 
-        // TODO: Add some sample people (Roommate and RA) to the list
+        // TODO: Add some sample people (Roommate and RA) to the list **Krish did this part**
         String[] chores = {"Vacuum", "Trash", "Dishes", "Laundry"}; //simple array for immutability
         String[] weeklyChores = new String[7];
         boolean running = true;
-        // TODO : Print choices
+        // TODO : Print choices **Zaid did this part**
         while (running) {
             System.out.println("\nWelcome to the Dorm Roommate Tracker");
             System.out.println("\nEnter option: ");
@@ -28,13 +28,13 @@ public class DormTracker {
             System.out.print("\nEnter choice: ");
 
             int choice = Integer.parseInt(scanner.nextLine());
-            // TODO: Print info for all people
+            // TODO: Print info for all people **Krish did this part**
             if (choice == 1) {
                 for (int i = 0; i < people.size(); i++) 
                 {
                     System.out.println(people.get(i).getInfo());
                 }
-            // TODO: Ask for time and show people who wake up earlier
+            // TODO: Ask for time and show people who wake up earlier **Albert did this part**
             } else if (choice == 2){
                 System.out.print("Enter wake-up time to filter (hour in 24hr format): ");
                 int wakeTime = Integer.parseInt(scanner.nextLine());//parse int in case of human error
@@ -45,7 +45,7 @@ public class DormTracker {
                         System.out.println(people.get(i).getName()); // prints their name if they wake up before
                     }
                 }
-            // TODO: Assign chores to each day of the week and display them
+            // TODO: Assign chores to each day of the week and display them **Albert did this part**
             } else if (choice == 3) {
                 System.out.println("Weekly Chore Calendar: ");
                 for (int i = 0; i < weeklyChores.length; i ++) // iterates through all the elements in weeklyChores
@@ -59,7 +59,7 @@ public class DormTracker {
             } else if (choice == 4) {
                 System.out.print("Enter first person name: ");
                 String name1 = scanner.nextLine();
-                System.out.print("Enter second person name: ");
+                System.out.print("Enter second person name: "); // **Krish did this part**
                 String name2 = scanner.nextLine();
                 Person first = null;
                 Person second = null;
@@ -80,7 +80,7 @@ public class DormTracker {
                 }
 
 
-            // TODO: Prompt user to add a new RA or Roommate
+            // TODO: Prompt user to add a new RA or Roommate **Albert did this part**
             } else if (choice == 5) {
                 System.out.print("Enter type (RA/Roommate): ");
                 String type = scanner.nextLine(); // string value for roommate
@@ -116,7 +116,7 @@ public class DormTracker {
             // TODO: Exit
             } else if (choice == 6) {
                 running = false;
-                System.out.println("Exiting program.");
+                System.out.println("Exiting program."); // **Zaid did this part**
             } else {
                 System.out.println("Invalid option.");
             }

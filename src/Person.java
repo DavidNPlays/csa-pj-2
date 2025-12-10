@@ -10,7 +10,7 @@ public class Person {
         this.snack = snack;
         this.studyStyle = studyStyle;
     }
-    // TODO: Return formatted info string
+    // TODO: Return formatted info string **David did this part**
     public String getInfo() {
         return "Name: " + name +" | Wake-up: " + wakeUpTime + " | Snack: " + snack + " | Study: " + studyStyle;
     }
